@@ -1,0 +1,117 @@
+/* General */
+:root{
+    --light-red : hsl(356, 100%, 66%);
+    --very-light-red : hsl(355, 100%, 74%);
+    --very-dark-blue : hsl(208, 49%, 24%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --light-grey: hsl(240, 7%, 94%);
+    --grayish-blue: hsl(240, 2%, 79%);
+    --very-dark-grayish-blue: hsl(207, 13%, 34%);
+    --very-dark-black-blue: hsl(240, 10%, 16%);
+    --very-light-red-gradient: hsl(13, 100%, 72%);
+    --light-red-gradient: hsl(353, 100%, 62%);
+    --very-dark-gray-blue-gradient: hsl(237, 17%, 21%);
+    --very-dark-desaturated-blue-gradient: hsl(237, 23%, 32%);
+    --Ubuntu: 'Ubuntu', sans-serif;
+    --Overpass: 'Overpass', sans-serif;
+}
+
+p{
+    letter-spacing: 1px;
+    line-height: 28px !important;
+}
+
+.d-none{
+    display: none !important;
+}
+
+/* Header */
+header{
+    height: 600px;
+    background-image: url("./images/bg-pattern-intro-desktop.svg"), linear-gradient( var(--very-light-red-gradient), var(--light-red-gradient));
+    background-position: center left -400px, center;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 100px;
+    color: var(--white);
+    font-family: var(--Ubuntu);
+    text-align: center;
+}
+
+.navbar__nav{
+    width: 90%;
+    position: absolute;
+    top: 20px;
+    right: 50%;
+    margin-left: -45%;
+    left: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger-menu{
+    display: none;
+}
+
+.navbar__nav__ul{
+    margin-left: 25px;
+    flex: 4;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar__nav__ul_itens, .create-account{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.navbar__nav__ul_itens > div{
+    margin-right: 30px;
+    position: relative;
+}
+
+.navbar__nav__ul_itens > div:first-child{
+    margin-left: 80px;
+}
+
+.create-account a{
+    color: var(--white);
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.navbar__nav__ul_itens .menu{
+    height: 30px;
+    cursor: pointer;
+}
+.navbar__nav__ul_itens .menu:hover{
+    font-weight: bold;
+}
+
+.down-arrow::after{
+    content: url('./images/icon-arrow-light.svg');
+    margin-left: 10px;
+}
+
+.up-arrow::after{
+    content: url('./images/icon-arrow-light.svg');
+    display: inline-block;
+    transform: rotate(180deg);
+    margin-left: 10px;
+}
+
+
+.navbar__nav__ul_itens .menu:hover::before{
+    display: block;
+    content: '';
+    width: 75%;
+    height: 1px;
+    background: var(--white);
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+}
