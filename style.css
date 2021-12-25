@@ -208,3 +208,71 @@ header{
     margin-top: 25px;
     font-weight: 300;
 }
+
+/* The Second Section */
+.state_of_art{
+    height: 50vh;
+    position: relative;
+    background: url("./images/bg-pattern-circles.svg") no-repeat left bottom, linear-gradient(to right, var(--very-dark-desaturated-blue-gradient), var(--very-dark-desaturated-blue-gradient));
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    font-family: var(--Overpass);
+    color: var(--white);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.state_of_art img{
+    width: 400px;
+    position: absolute;
+    top: -60px;
+    left: 0px;
+}
+
+.state_of_art_text{
+    width: 60%;
+}
+
+.state_of_art_text h2, .state_of_art_text p{
+    width: 510px;
+    margin: 0 auto;    
+}
+
+.state_of_art_text h2{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* The third section */
+.explanation{
+    height: 100vh;
+    font-family: var(--Overpass);
+    background: url('./images/illustration-laptop-desktop.svg') no-repeat;   
+    background-position: center left -215px, center;
+    background-size: 750px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.explanation__div{
+    width: 60%;
+}
+
+.explanation__div div{
+    width: 600px;
+}
+
+.explanation__div h3{
+    font-family: var(--Ubuntu);
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 25px;
+    color:  var(--very-dark-grayish-blue);
+}
+.explanation__div div:last-child h3{
+    margin-top: 25px;
+}
