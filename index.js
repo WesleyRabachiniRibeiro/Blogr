@@ -83,6 +83,22 @@ document.querySelectorAll(".menu").forEach(menu => {menu.addEventListener('click
                 company.classList.add('down-arrow')
             }
             break
+        }
+    })
+});
+
+// Hamburger Menu
+const hamburgerMenu = document.querySelector('#hamburger')
+const menu = document.querySelector('#initial-menu')
+if(window.screen.width < 1200){
+    menu.classList.add('d-none')
+}
+hamburgerMenu.addEventListener('click', () => {
+    if(hamburgerMenu.src.indexOf('/images/icon-hamburger.svg') != -1){
+        hamburgerMenu.src = './images/icon-close.svg'
+        menu.classList.remove('d-none')
+    }else{
+        hamburgerMenu.src = './images/icon-hamburger.svg'
+        menu.classList.add('d-none')
     }
 })
-});
