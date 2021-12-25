@@ -115,3 +115,61 @@ header{
     bottom: 5px;
     left: 0;
 }
+
+/* Main title */
+.title-container{
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    text-align: center;
+    font-family: var(--Overpass);
+    font-weight: 600;
+    color: var(--white);
+}
+
+.title-container__div > h2{
+    font-size: 60px;
+}
+
+.title-container__div > p{
+    font-weight: 300;
+    margin: 30px 0;
+}
+
+/* buttons */
+.title-container__div a, .btn-white{
+    border: 1px solid var(--white);
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: 0px 10px;
+    text-decoration: none;
+}
+
+.title-container__div a{
+    font-family: var(--Ubuntu);
+}
+
+.btn-white{
+    border-color: var(--white)!important;
+    background-color: var(--white)!important;
+    color: var(--light-red)!important;
+}
+
+.btn-white:hover{
+    transition: 1s;
+    border-color: var(--very-light-red)!important;
+    background-color: var(--very-light-red)!important;
+    color: var(--white)!important;
+}
+
+.title-container__div a{
+    background: linear-gradient(var(--light-red));
+    color: var(--white);
+}
+
+.title-container__div a:hover{
+    transition: 1s;
+    background-color: var(--white);
+    color: var(--light-red);
+    border-color: var(--white);
+}
