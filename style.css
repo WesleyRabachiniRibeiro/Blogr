@@ -337,3 +337,82 @@ header{
 .attribution a { 
     color: var(--very-dark-desaturated-blue-gradient); 
 }
+
+@media (max-width: 1200px) {
+     /* Mobile Header */
+
+     .title-container__div > h2{
+        font-size: 30px;
+    }
+
+    .hamburger-menu{
+        display: block;
+        cursor: pointer;
+    }
+    
+    .navbar__nav__ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        width: 90%;
+        background-color: var(--white);
+        border-radius: 10px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 50px;
+        z-index: 2;
+        font-size: 24px;
+        font-family: var(--Ubuntu);
+    }
+    .menu{
+        font-family: var(--Overpass);
+        width: 130px;
+        margin: 0 auto;
+        text-align: justify;
+        font-weight: bolder;
+    }
+    
+    .down-arrow::after{
+        content: url('./images/icon-arrow-dark.svg');
+    }
+    
+    .up-arrow::after{
+        content: url('./images/icon-arrow-dark.svg');
+    }
+ 
+    .create-account a{
+        color: var(--black);
+        font-weight: 700;
+        margin: 0px 0px 30px 0px;
+    }
+    .create-account a:hover{
+        font-weight: bold;
+    }
+    .create-account > .btn-white{
+        margin: 0;
+        width: 90px;
+        border-color: var(--light-red);
+        background: linear-gradient( var(--very-light-red-gradient), var(--light-red-gradient))!important;
+        color: var(--white)!important;
+    }
+    .navbar__nav__ul li{
+        width: 100%;
+    }
+    .navbar__nav__ul_itens{
+        border-bottom: 1px solid var(--very-dark-grayish-blue);
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .navbar__nav__ul_itens, .create-account{
+        flex-direction: column; 
+        color: var(--very-dark-black-blue)!important;
+    }
+    .navbar__nav__ul_itens div, .create-account{
+        margin: 30px auto!important;
+        text-align: center;
+        width: 100%;
+    }
+}
