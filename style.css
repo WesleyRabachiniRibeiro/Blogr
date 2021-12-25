@@ -375,6 +375,10 @@ header{
     color: var(--very-dark-desaturated-blue-gradient); 
 }
 
+.mobile{
+    display: none;
+}
+
 @media (max-width: 1200px) {
     /* Mobile changes */
     .mobile{
