@@ -173,3 +173,38 @@ header{
     color: var(--light-red);
     border-color: var(--white);
 }
+
+/* The first Section */
+.designed_for_the_future{
+    height: 100vh;
+    background: url('./images/illustration-editor-desktop.svg') no-repeat;   
+    background-position: center right -210px, center;
+    background-size: 750px;
+}
+
+.designed_for_the_future__div{
+    width: 80%;
+    height: 86%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: var(--Ubuntu);
+}
+
+.designed_for_the_future__div h2{
+    font-size: 30px;
+    font-weight: 700;
+    color:  var(--very-dark-grayish-blue);
+}
+
+.designed_for_the_future__div > h2{
+    font-size: 45px;
+    text-align: center;
+}
+
+.designed_for_the_future__div p{
+    width: 480px;
+    margin-top: 25px;
+    font-weight: 300;
+}
