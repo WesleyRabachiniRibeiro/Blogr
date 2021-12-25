@@ -415,4 +415,89 @@ header{
         text-align: center;
         width: 100%;
     }
+    /* First Section mobile */
+    .designed_for_the_future{
+        background: none;
+        height: auto;
+        padding: 100px 0 300px 0;
+    }
+
+    .designed_for_the_future__div{
+        width: 90%;
+        align-items: center;
+    }
+
+    .designed_for_the_future__div h2{
+        margin: 20px 0;
+    }
+
+    .designed_for_the_future__div p{
+        width: auto;
+    }
+
+    /* Second Section mobile */
+    .state_of_art{
+        height: auto;
+        padding: 80px 0;
+        justify-content: center;
+        position: relative;
+    }
+    .state_of_art img{
+        width: 300px;
+        position: absolute;
+        top: -210px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .state_of_art_text{
+        width: auto;
+    }
+
+    .state_of_art_text h2, .state_of_art_text p{
+        width: 80%;
+    }
+
+    /* Third Section mobile */
+    .explanation{
+        height: 100%;
+        margin: 100px 0;
+        width: 100%;
+        background: none;
+        justify-content: center;
+    }
+
+    .explanation__div{
+        width: 90%;
+    }
+
+    .explanation__div div{
+        width: 100%;
+    }
+
+
+    /* Footer Mobile */
+    .footer-container{
+        height: auto;
+    }
+
+    .footer-container__div_text{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-container__div_text picture{
+        margin: 50px 0;
+    }
+
+    .footer-container__div_text ul{
+        width: 100px;
+        margin-bottom: 40px;
+    }
+
+    .attribution { 
+        margin-bottom: 20px;
+    }
 }
