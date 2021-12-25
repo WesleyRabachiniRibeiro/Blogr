@@ -87,12 +87,10 @@ document.querySelectorAll(".menu").forEach(menu => {menu.addEventListener('click
     })
 });
 
+
 // Hamburger Menu
 const hamburgerMenu = document.querySelector('#hamburger')
 const menu = document.querySelector('#initial-menu')
-if(window.screen.width < 1200){
-    menu.classList.add('d-none')
-}
 hamburgerMenu.addEventListener('click', () => {
     if(hamburgerMenu.src.indexOf('/images/icon-hamburger.svg') != -1){
         hamburgerMenu.src = './images/icon-close.svg'
@@ -102,3 +100,15 @@ hamburgerMenu.addEventListener('click', () => {
         menu.classList.add('d-none')
     }
 })
+
+setInterval( () =>{
+    if(window.innerWidth <= 1200 && hamburgerMenu.src.indexOf('/images/icon-close.svg') == -1){
+        menu.classList.add('d-none')
+    }else if(window.innerWidth > 1200){
+        hamburgerMenu.src = './images/icon-hamburger.svg'
+        menu.classList.remove('d-none')
+    }
+    else{
+        menu.classList.remove('d-none')
+    }
+}, 0)
