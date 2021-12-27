@@ -213,6 +213,8 @@ header{
 
 /* The first Section */
 .designed_for_the_future{
+    max-width: 1600px;
+    margin: 0 auto;
     height: 100vh;
     background: url('./images/illustration-editor-desktop.svg') no-repeat;   
     background-position: center right -210px, center;
@@ -248,7 +250,7 @@ header{
 
 /* The Second Section */
 .state_of_art{
-    height: 50vh;
+    height: 377px;
     position: relative;
     background: url("./images/bg-pattern-circles.svg") no-repeat left bottom, linear-gradient(to right, var(--very-dark-desaturated-blue-gradient), var(--very-dark-desaturated-blue-gradient));
     border-top-right-radius: 100px;
@@ -284,6 +286,8 @@ header{
 
 /* The third section */
 .explanation{
+    max-width: 1600px;
+    margin: 0 auto;
     height: 100vh;
     font-family: var(--Overpass);
     background: url('./images/illustration-laptop-desktop.svg') no-repeat;   
@@ -569,5 +573,24 @@ header{
 
     .attribution { 
         margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 330px){
+    /* Buttons Header Mobile */
+    .title-container__div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title-container__div a{
+        margin-bottom: 20px;
+        width: 200px;
+    }
+    .state_of_art img{
+        width: 280px;
+    }
+    .mobile img{
+        width: 100%;
     }
 }
