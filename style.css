@@ -200,7 +200,7 @@ header{
 }
 
 .title-container__div a{
-    background: linear-gradient(var(--light-red));
+    background: linear-gradient(var(--light-red), var(--white));
     color: var(--white);
 }
 
