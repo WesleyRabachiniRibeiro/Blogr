@@ -576,8 +576,8 @@ header{
     }
 }
 
-@media (max-width: 330px){
-    /* Buttons Header Mobile */
+/* @media (max-width: 330px){
+     Buttons Header Mobile 
     .title-container__div{
         display: flex;
         flex-direction: column;
@@ -593,4 +593,4 @@ header{
     .mobile img{
         width: 100%;
     }
-}
+} */
