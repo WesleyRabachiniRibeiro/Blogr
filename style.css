@@ -200,7 +200,6 @@ header{
 }
 
 .title-container__div a{
-    background: linear-gradient(var(--light-red), var(--white));
     color: var(--white);
 }
 
@@ -576,8 +575,8 @@ header{
     }
 }
 
-/* @media (max-width: 330px){
-     Buttons Header Mobile 
+/* Buttons Header Mobile  */
+@media (max-width: 330px){
     .title-container__div{
         display: flex;
         flex-direction: column;
@@ -593,4 +592,4 @@ header{
     .mobile img{
         width: 100%;
     }
-} */
+}
